@@ -1,0 +1,12 @@
+1. cd unix_tests
+2. cat > skills2.txt (digita os valores)
+3. cat >> skills2.txt (digita)
+4. cat skills2.txt | wc -l
+5. sort < skills2.txt | head -3 > top_skills.txt
+6. touch (echo "frase 1" > phrases2.txt)
+7. grep br phrases2.txt | wc -l
+8. grep -v br phrases2.txt | wc -l
+9. echo "Brasil \nArgentina" >> phrases2.txt
+10.cat phrases2.txt countries.txt > bunch_of_things.txt
+11.sort bunch_of_things.txt -o bunch_of_things.txt
+

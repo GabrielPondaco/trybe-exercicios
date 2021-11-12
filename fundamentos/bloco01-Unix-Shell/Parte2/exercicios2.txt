@@ -1,0 +1,6 @@
+1. cd
+2. ls -l
+3. chmod a+rw ou 666 bunch_of_things.txt 
+4. chmod a-w ou 444  bunc_of_things.txt
+5. chmod 644 bunch_of_things.txt
+

@@ -1,0 +1,11 @@
+1. ps
+2. sleep 30 &
+3. ps - kill "PID"
+4. sleep 30 + control z + bg
+5. sleep 300 &
+6. sleep 200 + ctrl z - sleep 100 +ctrlz
+7. jobs + fg coloca o primeiro em fg
+	fg %? escolhe o da lista de jobs
+8. fg %? numero na lista
+9. kill -9 PID
+
