@@ -17,3 +17,5 @@ computadores Servidores: respodem as requisições dos clientes, conectados
 	
 cada computador tem um IP, e cada pacote pela internet contém o IP
 para saber de onde vem e para onde vai, mesmo conectados a uma mesma rede
+cada roteador que o pacote passa, vai adicionando uma camada com
+as informações do roteador que passou
