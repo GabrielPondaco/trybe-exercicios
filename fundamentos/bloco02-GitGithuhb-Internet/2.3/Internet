@@ -1,0 +1,19 @@
+Protocolo IP
+identifica cada dispositivo na rede
+divide as informacoes em pacotes
+
+internet é um cabo
+computadores se conectam a esse cabo
+computadores Clientes: requisitam a informação, nós utilizamos, conect
+	ados à internet via servidores ISP
+computadores Servidores: respodem as requisições dos clientes, conectados
+	diretamente à internet.
+
+	cliente conecta ao site através do provedor de internet, 
+	entra no "gmail.com" e escreve um email
+	ao clicar enviar, o gmail manda o email para o provedor,
+	que por sua vez encaminha ao destinatario
+	divide as informações em pacotes e depois os juntam.
+	
+cada computador tem um IP, e cada pacote pela internet contém o IP
+para saber de onde vem e para onde vai, mesmo conectados a uma mesma rede
