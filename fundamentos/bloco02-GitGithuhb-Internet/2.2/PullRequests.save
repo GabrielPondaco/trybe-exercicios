@@ -1,0 +1,14 @@
+qpull request feito com sucesso!!
+exercicios concluídos
+
+git init (inicia repositorio git localmente)
+git pull (pega a sinformacoes remotas do repositorio)
+git branch nomeDaBranch (para criar nova brench)
+git checkout nomeDaBranch (para selecionar a branch de trabalho)
+após as alterações feitas na branch 
+-> git status
+-> git add .
+-> git commit -m "mensagem"
+-> git push -u origin nomeDaBranch (apenas no primeiro push da branch)
+e ai sim, o próprio git irá indicar para fazer Pull Request
+

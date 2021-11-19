@@ -1,0 +1,59 @@
+Protocolo IP
+identifica cada dispositivo na rede
+divide as informacoes em pacotes
+
+internet é um cabo
+computadores se conectam a esse cabo
+computadores Clientes: requisitam a informação, nós utilizamos, conect
+	ados à internet via servidores ISP
+computadores Servidores: respodem as requisições dos clientes, conectados
+	diretamente à internet.
+
+	cliente conecta ao site através do provedor de internet, 
+	entra no "gmail.com" e escreve um email
+	ao clicar enviar, o gmail manda o email para o provedor,
+	que por sua vez encaminha ao destinatario
+	divide as informações em pacotes e depois os juntam.
+	
+cada computador tem um IP, e cada pacote pela internet contém o IP
+para saber de onde vem e para onde vai, mesmo conectados a uma mesma rede
+cada roteador que o pacote passa, vai adicionando uma camada com
+as informações do roteador que passou
+
+explicar de forma simples como a internet funciona
+	a internet funciona da seguinte forma:
+		existe um "banco central de dados", onde fica tudo armaze
+		nado. quando você abre o navegador e digita "google"
+		o servidor vai buscar no banco e te entregar a página
+		ao fazer uma pesquisa, ele ira consultar outra vez
+		pra te devolver o resultado da pesquisa.
+entender o modelo cliente servidor e identificar suas partes
+		
+compreender como funcionam os protocolos http e https
+	protocolo http é a "linguagem" utilizada para a comunicação
+	entre cliente e servidor, para que saibam exatamente o que
+	esperar. HTTPS é o mesmo mas utiliza encriptação.
+	divide as requisições em HEADER e BODY
+		header: cabeçalho, contendo informações
+		body: corpo da mensagem,
+identificar quais os tipos de requisição podem ser feitos através
+desses protocolos
+	get: ler informações
+	post: criar novo recurso(novo usuario)
+	put: atualizar recurso, muda estado da aplicação
+	delete: deletar recurso
+	rest(Representational State Transfer): arquitetura, cliente
+		utiliza apenas representações.
+
+WorkFlow
+	1. O browser manda pro DNS server a url, e espera o endereço
+		real da página.
+	2. O browser manda uma requisição HTTP para o servidor, pedindo
+		uma cópia do site para o cliente. Essa mensagem e todos
+		os outros dados são enviados pela internet usando TCP/IP
+	3. Se o servidor aprovar a requisição do cliente, envia uma msg
+		"200 OK" (status de aprovado, "claro que voce pode ver
+		meu site, aqui está!", e manda os arquivos do site para
+		o browser em uma série de pedaços chamados data packets.
+	4. O browser junta os pedaços de pacotes e transforma em uma 
+		página da web completa e mostra pro cliente.
