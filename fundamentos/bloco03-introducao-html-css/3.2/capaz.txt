@@ -1,0 +1,4 @@
+Criar regras de estilo para tags HTML usando CSS
+Seletores de tag, id e class para aplicar regras de CSS
+Alterar fonte e cor de páginas web
+Utilizar CSS inline e externo
