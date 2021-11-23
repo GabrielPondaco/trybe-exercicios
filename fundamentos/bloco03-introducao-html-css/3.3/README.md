@@ -18,3 +18,7 @@ position
 	absolute
 	z-index
 	float
+agrupamento e pseudoclasses
+	classe:"pseudo"
+		ex = li:hover
+		     li:focus
