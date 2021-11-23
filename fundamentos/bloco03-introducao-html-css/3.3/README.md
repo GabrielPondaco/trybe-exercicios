@@ -22,3 +22,7 @@ agrupamento e pseudoclasses
 	classe:"pseudo"
 		ex = li:hover
 		     li:focus
+
+max-width largura máxima
+	pegar div p, para apenas paragrafo da div
+
