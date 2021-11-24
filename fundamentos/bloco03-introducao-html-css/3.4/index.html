@@ -9,9 +9,8 @@
         text-align: center;
       }
 
-      ul {
-          list-style: none;
-          /* tirar as "bolinhas" da lista */
+      ul{
+        list-style: none;
       }
 
       .first {
@@ -20,10 +19,8 @@
         height: 50px;
         text-align: center;
         width: 200px;
-        /* display block para ocupar o primeiro lugar sozinho */
-        /* e a margem de 200px para empurrar >> para a direita */
         display: block;
-        margin-left: 200px;
+        margin: auto;
       }
 
       .second {
@@ -32,8 +29,6 @@
         height: 50px;
         text-align: center;
         width: 300px;
-        /* inline block para dividir o espaco com o terceiro lugar */
-        display: inline-block;
       }
 
       .third {
@@ -42,24 +37,15 @@
         height: 50px;
         text-align: center;
         width: 300px;
-        /* inline block para dividir o espaco com o segundo lugar */
+      }
+
+      section{
+        text-align: center;
+      }
+
+      li{
         display: inline-block;
       }
-
-      /* classe de premiacao para a section inteira de premiação */
-      /* pegar apenas os itens das listas dessa seção */
-      /* inline block para ficar lado a lado */
-      .premiacao ul li {
-            display: inline-block;
-      }
-      /* mesma seção do de cima, para alinhar os h3 */
-      .premiacao h3 {
-          text-align: center;
-      }
-
-     
-      
-      
 
     </style>
   </head>
@@ -67,14 +53,14 @@
     <header>
       <h1>Hackathon Results</h1>
     </header>
-    <section class="podium">
-      <ul class="podiumList">
+    <section>
+      <ul>
         <li class="first">1º - Equipe 1</li>
         <li class="second">2º - Equipe 2</li>
         <li class="third">3º - Equipe 3</li>
       </ul>
     </section>
-    <section class="premiacao">
+    <section>
       <h3>Premiação Primeiro Lugar:</h3>
       <ul>
         <li>| R$ 1000,00 por integrante da equipe |</li>
