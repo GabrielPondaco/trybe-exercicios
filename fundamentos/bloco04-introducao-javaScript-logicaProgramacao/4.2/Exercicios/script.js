@@ -44,10 +44,10 @@ for (let index = 0; index < numbers.length ; index+= 1){
 }
 console.log(menor);*/
 
-let numeros = [];
+/*let numeros = [];
 for (let index = 0; index < 25; index+= 1){
     numeros[index] = index+1;
     console.log(numeros[index]/2);
-}
+} resultado de cada elemento dividido por 2*/
 
 
