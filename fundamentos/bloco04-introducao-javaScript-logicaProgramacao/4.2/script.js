@@ -22,3 +22,10 @@ for (let name of names){
     console.log(name);
 } exercicio 1 for of */
 
+let numbers = [10,20,30,40,50];
+let sum = 0;
+
+for (let number of numbers){
+    sum += number;
+}
+console.log(sum);
