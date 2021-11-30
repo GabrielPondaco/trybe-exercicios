@@ -1,0 +1,20 @@
+declarar o array com os numeros
+estrutura de repeticao para percorrer o array
+imprimir cada valor em cada uma das repetições
+------------------------------------------------
+declarar uma variavel vazia para a soma
+a cada repetição, somar a esta variavel o valor contido no array
+imprima essa variavel
+-----------------------------------------------------------------
+pssos do anterior
+dividir pelo tamanho do array
+---------------------------------------------
+estrutura condicional verificando se o valor da media é maior que 20
+se for, imprima valor maior que 20
+se nao, imprima valor menor ou igual a 20
+--------------------------------------------
+pega o código ja implementado do bubble sort e chame de function bubble sort
+recebendo o array numbers
+chame a função e passe como parametro o array numbers
+imprima o array
+em ordem decrescente, pegue o array ja ordenado e coloque ao contrário (reverse)
