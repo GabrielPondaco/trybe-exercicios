@@ -12,28 +12,32 @@ let info2 = {
 };
 
 
-console.log("Bem-vinda, " + info.personagem);
+//console.log("Bem-vinda, " + info.personagem);
 
-info['recorrente'] = 'Sim';
+info['recorrente'] = 'Não';
 
-console.log(info);
-console.log(info2);
-for (let key in info){
+//console.log(info);
+//console.log(info2);
+/*for (let key in info){
   
   console.log(key + " : " + info[key]);
-}
+}*/
 
 for (let key in info){
-  if (key != 'recorrente'){
-    console.log(info[key] + " e " + info2[key]);
-  }
-  else if (info[key] === info2[key]){
+  if (key === 'recorrente' && info[key] === 'Sim' && info2[key] === 'Sim'){
     console.log("Ambos recorrentes");
+  }
+  else {
+    console.log(info[key] + " e " + info2[key]);
   }
   
 }
 
+
+
+
 // -----------------------------------------------------------------------
+/*
 let leitor = {
   nome: 'Julia',
   sobrenome: 'Pessoa',
@@ -59,4 +63,7 @@ let livros = 0;
 for (let favoritos in leitor.livrosFavoritos){
   livros += 1;
 }
-console.log(leitor.nome + " tem " + livros + " livros favoritos");
+console.log(leitor.nome + " tem " + livros + " livros favoritos");*/
+
+
+

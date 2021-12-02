@@ -84,3 +84,21 @@ function verificaFimPalavra (palavra, fim) {
 }
 console.log(verificaFimPalavra('joaofernando', 'fernan'));
 console.log(verificaFimPalavra('trybe','be'));
+
+
+// function countItems(arr) {
+//   const countMap = Object.create(null);
+
+//   for (const element of arr) {
+//     // Basicamente, estamos dizendo: atribua à `countMap[element]` o valor
+//     // atual (ou zero, caso não existir) somado ao número 1.
+//     countMap[element] = (countMap[element] || 0) + 1;
+//   }
+  
+//   return countMap;
+// }
+
+// const arr = ['1', '2', '4', '2', '2', '3', '3'];
+// console.log(countItems(arr));
+
+
