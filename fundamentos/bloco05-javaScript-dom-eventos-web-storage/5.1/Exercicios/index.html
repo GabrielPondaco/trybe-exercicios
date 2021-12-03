@@ -24,43 +24,43 @@
 //    - document.getElementsByClassName()
 //    - document.getElementsByTagName()
 // Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
-function mudaP() {
-  let atualizaP = document.getElementsByTagName('p');
-  atualizaP[0].innerText = 'Daqui a 2 anos me vejo empregado, morando em outro lugar, seguindo com os hábitos e a maneira de levar a vida que tenho aprendido na Trybe'
+function mudaP(tag, text) {
+  let atualizaP = document.getElementsByTagName(tag);
+  atualizaP[0].innerText = text;
 }
-mudaP();
+mudaP('p', 'Daqui a 2 anos me vejo empregado, morando em outro lugar, seguindo com os hábitos e a maneira de levar a vida que tenho aprendido na Trybe');
 // Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
-function mudaAmarelo() {
-  let atualizaAmarelo = document.getElementsByClassName('main-content');
-  atualizaAmarelo[0].style.background = 'rgb(76,164,109)';
+function mudaAmarelo(tag, color) {
+  let atualizaAmarelo = document.getElementsByClassName(tag);
+  atualizaAmarelo[0].style.background = color;
 }
-mudaAmarelo();
+mudaAmarelo('main-content', 'rgb(76,164,109)' );
 // Crie uma função que mude a cor do quadrado vermelho para branco.
-function mudaMeio() {
-  let atualizaMeio = document.getElementsByClassName('center-content');
-  atualizaMeio[0].style.background = 'white';
+function mudaMeio(tag, color) {
+  let atualizaMeio = document.getElementsByClassName(tag);
+  atualizaMeio[0].style.background = color;
 }
-mudaMeio();
+mudaMeio('center-content', 'white');
 // Crie uma função que corrija o texto da tag <h1>.
-function corrigeTag() {
+function corrigeTag(tag, text) {
   let atualizaH1 = document.getElementsByTagName('h1');
-  atualizaH1[0].innerText = 'Exercício 5.1 - JavaScript Lindo Lindo Lindo';
+  atualizaH1[0].innerText = text;
 }
-corrigeTag();
+corrigeTag('h1', 'Exercício 5.1 - JavaScript Lindo Lindo Lindo');
 // Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-function pMaiusculo() {
-  let atualizaP = document.getElementsByTagName('p');
-  atualizaP[0].style.textTransform = 'uppercase';
+function pMaiusculo(tag, transform) {
+  let atualizaP = document.getElementsByTagName(tag);
+  atualizaP[0].style.textTransform = transform;
 }
-pMaiusculo();
+pMaiusculo('p', 'uppercase');
 // Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-function consolaP() {
-  let todosP = document.getElementsByTagName('p');
+function consolaP(tag) {
+  let todosP = document.getElementsByTagName(tag);
   for (let key in todosP) {
     console.log(todosP[key].innerText);
   }
 }
-consolaP();
+consolaP('p');
         
     </script>
   </body>
