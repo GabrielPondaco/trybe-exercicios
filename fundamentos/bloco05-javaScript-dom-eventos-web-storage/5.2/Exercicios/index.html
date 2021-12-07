@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      const pai = document.querySelector('body');
+      const filhoH1 = document.createElement('h1');
+      filhoH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      pai.appendChild(filhoH1);
+
+      const filhoMain = document.createElement('main');
+      filhoMain.className = 'main-content';
+      pai.appendChild(filhoMain);
+
+      const filhoSection = document.createElement('section');
+      filhoSection.className = 'center-content';
+      filhoMain.appendChild(filhoSection);
+
+      const tagP = document.createElement('p');
+      tagP.innerText = 'Bom dia boa tarde boa noite!!!';
+      filhoSection.appendChild(tagP);
+
+      const filhoSectionL = document.createElement('section');
+      filhoSectionL.className = 'left-content';
+      filhoMain.appendChild(filhoSectionL);
+
+      const filhoSectionR = document.createElement('section');
+      filhoSectionR.className = 'right-content';
+      filhoMain.appendChild(filhoSectionR);
+
+      const img1 = document.createElement('img');
+      img1.src = 'https://picsum.photos/200';
+      img1.className = 'small-image';
+      filhoSectionL.appendChild(img1);
+
+      const lista = document.createElement('ul');
+      filhoSectionR.appendChild(lista);
+      const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez']
+      for (let num in arrayNumbers) {
+        const elementLi = document.createElement('li');
+        elementLi.innerHTML = arrayNumbers[num];
+        elementLi.className = 'listaNumeros';
+        lista.appendChild(elementLi);
+      }
+
+      for (let index = 1; index <= 3; index += 1) {
+        const elementH3 = document.createElement('h3');
+        elementH3.innerHTML = 'Show ' + index;
+        filhoMain.appendChild(elementH3);
+      }
+
+      const title = document.querySelector('h1');
+      title.className = 'title';
+
+
+      const description = document.querySelectorAll('h3');
+      for (let key in description) { 
+        description[key].className = 'description';
+      }
+      
+
+     const remove = document.querySelectorAll('.left-content')[0];
+      filhoMain.removeChild(remove);
+     
+      filhoSectionR.style.marginRight = 'auto';
+
+      filhoSection.style.backgroundColor = 'green';
+
+      /*const listaNumeros = document.querySelectorAll('.listaNumeros');
+      for (let numero in listaNumeros) {
+        if (listaNumeros[numero].innerText === 'nove' || listaNumeros[numero].innerText === 'dez') {
+          lista.removeChild(numero);
+        }
+      }arrayNumbers*/
+      lista.lastChild.remove();
+      lista.lastChild.remove();
+
+    </script>
+  </body>
+</html>
