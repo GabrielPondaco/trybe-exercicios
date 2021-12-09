@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+  margin: auto;
+}
+
+.div {
+  text-align: justify;
+  display: inline-block;
+  max-width: 30%;
+  vertical-align: top;
+  margin-left: 100px;
+}
