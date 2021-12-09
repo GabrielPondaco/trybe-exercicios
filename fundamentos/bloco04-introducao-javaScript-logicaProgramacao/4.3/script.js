@@ -18,7 +18,7 @@ for (let index = 0; index < n; index += 1){
     asteriscos = [];
 }*/
 
-
+/*
 let n = 5;
 let asteriscos = [];
 for (let index = 0; index < n; index += 1){
@@ -34,7 +34,7 @@ for (let index = 0; index < n; index += 1){
     console.log(asteriscos.join(''));
     asteriscos = [];
 }
-/*
+*/
 let n = 5;
 let asteriscos = [];
 let mid = (n+1)/ 2;
@@ -48,14 +48,13 @@ for (let index = 0; index < mid; index += 1){
         else {
             asteriscos.push("-");   
         }
-
     }
     esquerdo -= 1;
     direito += 1;
     console.log(asteriscos.join(''));
     asteriscos = [];
-}
-*//*
+}/*
+/*
 let n = 9;
 let asteriscos = [];
 let mid = (n+1)/ 2;
@@ -86,7 +85,6 @@ for (let index = 0; index < mid; index += 1){
     console.log(asteriscos.join(''));
     asteriscos = [];
 }
-*/
 
 
 
