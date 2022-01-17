@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1642340155827" clover="3.2.0">
+  <project timestamp="1642340155827" name="All files">
+    <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="14" coveredelements="14" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
+    <file name="searchEmployee.js" path="/home/gabrielpondaco/trybe-exercicios/fundamentos/bloco07-javaScriptES6-testes-unitarios/7.3/exercicios2/exBonus/searchEmployee.js">
+      <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
+      <line num="44" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="45" count="2" type="stmt"/>
+      <line num="47" count="5" type="stmt"/>
+      <line num="48" count="24" type="cond" truecount="2" falsecount="0"/>
+      <line num="49" count="3" type="stmt"/>
+      <line num="52" count="2" type="stmt"/>
+      <line num="57" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
