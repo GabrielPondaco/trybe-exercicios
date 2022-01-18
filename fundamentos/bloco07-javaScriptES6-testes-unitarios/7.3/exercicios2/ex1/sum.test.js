@@ -15,7 +15,7 @@ describe('testa a função soma', () => {
     expect(() => sum(4, '5')).toThrow(Error);
   });
   it('Teste se a mensagem do erro é "parameters must be numbers"', () => {
-    expect(() => sum(4, '5')).toThrowError('parameters must be numbers');
+    expect(() => sum(4, '5')).toThrowError(new Error ('parameters must be numbers'));
   })
 })
 
