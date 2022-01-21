@@ -130,4 +130,30 @@ function authorUnique() {
   return found;
 };
 
-console.log(authorUnique());
+console.log(!authorUnique());
+
+
+//IMPLEMENTAÇÃO DO MARCOS VINICIUS!!!!
+// function authorUnique() {
+//   // O contador propriamente dito
+//   let birthCount = {}
+
+//   // Loop para alimentar o contador
+//   books.forEach((book) => {
+//     const birthYear = book.author.birthYear;
+    
+//     // Caso o ano ainda não esteja no objeto, inicializar ele
+//     if (birthCount[birthYear] === undefined) {
+//       birthCount[birthYear] = 0
+//     }
+    
+//     // Somar 1 no contador
+//     birthCount[birthYear] += 1
+//   })
+
+//   // Caso todos os valores do contador sejam iguais a 1,
+//   // então nenhum autor nasceu no mesmo ano que outro.
+//   return Object.values(birthCount).every((count) => count <= 1)
+// }
+
+// console.log(`author unique ${authorUnique()}`);
