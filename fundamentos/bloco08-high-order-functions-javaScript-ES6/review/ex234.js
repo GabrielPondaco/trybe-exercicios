@@ -70,10 +70,7 @@ console.log(`Nomes : ${reduceNames()}`);
 const expectedResult = 43;
 
 function averageAge() {
-  let totalAge = 0;
-  const numberOfBooks = books.length;
-  totalAge = books.reduce((acc, curr) => acc + (curr.releaseYear - curr.author.birthYear), 0);
-  return totalAge/numberOfBooks;
+  return books.reduce((acc, curr) => acc + (curr.releaseYear - curr.author.birthYear), 0)/books.length;
 };
 console.log(`Idade média: ${averageAge()}`);
 
