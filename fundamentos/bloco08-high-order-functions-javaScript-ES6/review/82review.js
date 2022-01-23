@@ -62,21 +62,19 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
-function reduceNames() {
-  return books.reduce((acc, curr) => `${acc}, ${curr.author.name}`);
-};
-console.log(`Nomes : ${reduceNames()}`);
-
-const expectedResult = 43;
-
-function averageAge() {
-  return books.reduce((acc, curr) => acc + (curr.releaseYear - curr.author.birthYear), 0)/books.length;
-};
-console.log(`Idade média: ${averageAge()}`);
-
-
-function longestNamedBook() {
-  return books.reduce((acc, curr) => acc.name.length > curr.name.length ? acc : curr ).name
+function formatedBookNames() {
+  return books.map((book) => 
+    `${book.name} - ${book.genre} - ${book.author.name}`
+  );
 }
+console.log(formatedBookNames())
 
-console.log(longestNamedBook());
+function nameAndAge() {
+  return books
+    .map((book) => ({
+        age: (book.releaseYear - book.author.birthYear), 
+        author: book.author.name,
+    }))
+    .sort((a, b) => a.age - b.age);
+}
+console.log(nameAndAge());

@@ -7,6 +7,6 @@ const arrays = [
 ];
 
 function flatten() {
-  return arrays.reduce((array1, array2) => array1.concat(array2));
+  return arrays.reduce((acc, curr) => acc.concat(curr), []);
 };
 console.log(flatten());
