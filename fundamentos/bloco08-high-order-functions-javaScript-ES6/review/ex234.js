@@ -63,7 +63,7 @@ const books = [
 
 // Adicione o código do exercício aqui:
 function reduceNames() {
-  return books.map((book) => book.author.name).reduce((acc, curr) => `${acc}, ${curr}`);
+  return books.reduce((acc, curr) => `${acc}, ${curr.author.name}`);
 };
 console.log(`Nomes : ${reduceNames()}`);
 

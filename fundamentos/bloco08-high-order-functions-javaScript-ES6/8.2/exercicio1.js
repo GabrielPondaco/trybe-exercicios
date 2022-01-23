@@ -61,62 +61,62 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
-function authorBornIn1947() {
-  // escreva aqui o seu código
-  return books.find((book) => book.author.birthYear === 1947).author.name;
-}
+// // Adicione o código do exercício aqui:
+// function authorBornIn1947() {
+//   // escreva aqui o seu código
+//   return books.find((book) => book.author.birthYear === 1947).author.name;
+// }
 
-console.log(authorBornIn1947());
+// console.log(authorBornIn1947());
 
-function smallerName() {
-  let nameBook = books[0].name;
-  // escreva aqui o seu código
-  books.forEach((books) => books.name.length < nameBook.length ? nameBook = books.name : false);
-  // Variável nameBook que receberá o valor do menor nome;
-  return nameBook;
-}
+// function smallerName() {
+//   let nameBook = books[0].name;
+//   // escreva aqui o seu código
+//   books.forEach((books) => books.name.length < nameBook.length ? nameBook = books.name : false);
+//   // Variável nameBook que receberá o valor do menor nome;
+//   return nameBook;
+// }
 
-console.log(smallerName());
+// console.log(smallerName());
 
-const expectedResult = {
-  author: {
-    birthYear: 1948,
-    name: 'George R. R. Martin',
-  },
-  genre: 'Fantasia',
-  id: 1,
-  name: 'As Crônicas de Gelo e Fogo',
-  releaseYear: 1991,
-};
+// const expectedResult = {
+//   author: {
+//     birthYear: 1948,
+//     name: 'George R. R. Martin',
+//   },
+//   genre: 'Fantasia',
+//   id: 1,
+//   name: 'As Crônicas de Gelo e Fogo',
+//   releaseYear: 1991,
+// };
 
-function getNamedBook() {
-  // escreva seu código aqui
-  return books.find((book) => book.name.length === 26);
-}
+// function getNamedBook() {
+//   // escreva seu código aqui
+//   return books.find((book) => book.name.length === 26);
+// }
 
-console.log(getNamedBook());
+// console.log(getNamedBook());
 
-function booksOrderedByReleaseYearDesc() {
-  // escreva aqui seu código
-  return books.sort((book1, book2) => book2.releaseYear - book1.releaseYear);
-}
+// function booksOrderedByReleaseYearDesc() {
+//   // escreva aqui seu código
+//   return books.sort((book1, book2) => book2.releaseYear - book1.releaseYear);
+// }
 
-console.log(booksOrderedByReleaseYearDesc());
+// console.log(booksOrderedByReleaseYearDesc());
 
-function everyoneWasBornOnSecXX() {
-  // escreva seu código aqui
-  return books.every((book) => book.author.birthYear > 1901);
-}
+// function everyoneWasBornOnSecXX() {
+//   // escreva seu código aqui
+//   return books.every((book) => book.author.birthYear > 1901);
+// }
 
-console.log(everyoneWasBornOnSecXX());
+// console.log(everyoneWasBornOnSecXX());
 
-function someBookWasReleaseOnThe80s() {
-  // escreva seu código aqui
-  return books.some((book) => book.releaseYear >= 1980 && book.releaseYear <= 1989);
-}
+// function someBookWasReleaseOnThe80s() {
+//   // escreva seu código aqui
+//   return books.some((book) => book.releaseYear >= 1980 && book.releaseYear <= 1989);
+// }
 
-console.log(someBookWasReleaseOnThe80s());
+// console.log(someBookWasReleaseOnThe80s());
 
 // Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário.
 function authorUnique() {
