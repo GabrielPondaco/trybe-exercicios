@@ -135,7 +135,7 @@ const books = [
 // function oldBooksOrdered() {
 //   // escreva seu código aqui
 //   const old = books.filter((book) => 
-//     (2021 - book.releaseYear) >= 60
+//     (2022 - book.releaseYear) >= 60
 //   )
 //   return old.sort((book1, book2) => book1.releaseYear - book2.releaseYear);
 // }
