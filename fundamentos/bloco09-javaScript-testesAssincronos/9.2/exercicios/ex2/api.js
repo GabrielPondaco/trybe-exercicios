@@ -3,7 +3,7 @@ const API_URL = 'https://api.coincap.io/v2/assets';
 const ul = document.querySelector('ul');
 const createItemList = (coin) => {
   const itemList = document.createElement('li');
-  itemList.innerHTML = `${coin.name} (${coin.symbol}): ${parseInt(coin.priceUsd).toFixed(2)}`;
+  itemList.innerHTML = `${coin.name} (${coin.symbol}): ${Number(coin.priceUsd).toFixed(2)}`;
   ul.appendChild(itemList);
 }
 
@@ -14,7 +14,7 @@ const fetchCoins = () => {
     headers: { 'Accept-Encoding': 'deflate' }
   };
 
-  const fetchedArray = fetch(API_URL, myObject)
+  fetch(API_URL)
   .then((response) => response.json())
   .then((datas) => datas.data.filter((data, index) => index < 10).forEach((each) => {
     createItemList(each);
