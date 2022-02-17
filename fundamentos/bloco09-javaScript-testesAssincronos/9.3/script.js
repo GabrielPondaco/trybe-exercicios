@@ -1,4 +1,6 @@
-const favoriteCards = [];
-favoriteCards.length = 4;
-console.log(favoriteCards);
-console.log(favoriteCards.length);
+
+jogador1.innerHTML = 'lalao';
+// ul.appendChild(document.createElement('li'))
+// .innerText = "texto do li";
+const li = document.createElement('li');
+ul.appendChild(li).innerHTML = 'lalu';
