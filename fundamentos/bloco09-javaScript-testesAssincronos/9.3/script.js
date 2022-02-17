@@ -1,3 +1,4 @@
+
 jogador1.innerHTML = 'lalao';
 // ul.appendChild(document.createElement('li'))
 // .innerText = "texto do li";
