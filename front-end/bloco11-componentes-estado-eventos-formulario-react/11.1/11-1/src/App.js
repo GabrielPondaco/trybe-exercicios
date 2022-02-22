@@ -9,7 +9,7 @@ class App extends Component {
       btn2: 0,
       btn3: 0,
     };
-    this.handleClick = this.handleClick.bind(this);
+    // this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick({ target: { id } }) {
@@ -23,6 +23,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this);
     const { btn1, btn2, btn3 } = this.state;
     return (
       <div>
